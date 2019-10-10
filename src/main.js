@@ -3,7 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import '../static/style/sass/app.scss'
+import MyCom from '@/components/index'
+import '@static/style/sass/app.scss'
+
+Vue.use(MyCom)
+
 
 Vue.config.productionTip = false
 

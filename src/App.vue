@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
     <router-view/>
+    <footer class="footerTab">footer</footer>
   </div>
 </template>
 
@@ -12,7 +12,12 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+#app{
+  display: flex;
+  flex-direction: column;
+}
+.footerTab{
+  height: 50px;
+  width: 100%;
 }
 </style>
