@@ -4,7 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import MyCom from '@/components/index'
+import VueTool from '@/utils/VueTool'
 import '@static/style/sass/app.scss'
+import '@static/fonts/iconfont.css'
 
 Vue.use(MyCom)
 
