@@ -1,12 +1,12 @@
 <template>
   <div class="lzo-warp Index">
     <lzo-header class="myheader" :AddLeft="false" @leftClick="leftClick">首页</lzo-header>
-
     <div class="modeule" v-for="(item,index) in items" :key="index">
       <span class="title">{{item.title}}</span>
       <ul class="modeule-val">
-        <li class="modeule-item" v-for="(vitem,vindex) in item.val" :key="vindex">
-           <lzo-button type='primary'>{{vitem.title}}</lzo-button>
+        <li class="modeule-item" v-for="(vitem,vindex) in item.val" :key="vindex" @click='handleGoto(vitem.path)'>
+           <!-- <lzo-button type='primary'>{{vitem.title}}</lzo-button> -->
+           {{vitem.title}}
         </li>
       </ul>
     </div>
@@ -15,20 +15,24 @@
 
 <script>
 export default {
-  name: "Index",
+  name: "AppController",
   data() {
     return {
       msg: "",
       items: [
         {
-          title: "cssItems",
+          title: "模块一",
           val: [
             {
-              path: "/CssComponents/basic",
-              title: "基本样式"
+              path: "/CountDownController",
+              title: "倒计时"
             },
             {
-              path: "/CssComponents/button",
+              path: "/VisCodeEnterController",
+              title: "输入验证码"
+            },
+            {
+              path: "/VisCodeEnterController",
               title: "按钮"
             },
             {
@@ -66,15 +70,11 @@ export default {
             {
               path: "/CssComponents/layout",
               title: "布局"
-            },
-            {
-              path: "/CssComponents/grid",
-              title: "格式化布局"
             }
           ]
         },
         {
-          title: "jsItems",
+          title: "模块二",
           val: [
             {
               path: "/JsComponents/dialog",
@@ -131,10 +131,6 @@ export default {
             {
               path: "/JsComponents/tab",
               title: "tab(切换)"
-            },
-            {
-              path: "/JsComponents/carkeyboard",
-              title: "车牌键盘"
             }
           ]
         }

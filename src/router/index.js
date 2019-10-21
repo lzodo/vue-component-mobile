@@ -9,22 +9,39 @@ export default new Router({
     {
       path: '/',
       name: 'Index',
-      component: Modeules.AppController
+      component: Modeules.MainController,
+      children:[
+        {
+          path: '/',
+          name: 'home',
+          component: Modeules.AppController
+        },
+        {
+          path: '/about',
+          name: 'about',
+          component: Modeules.AboutController
+        },
+        {
+          path: '/userinfo',
+          name: 'userinfo',
+          component: Modeules.UserInfoController
+        },
+      ],
     },
     {
-      path: '/about',
-      name: 'about',
-      component: Modeules.AboutController
-    },
-    {
-      path: '/userinfo',
-      name: 'userinfo',
-      component: Modeules.UserInfoController
-    },
-    {
-      path: '/casepages/sxbk',
-      name: 'sxbk',
+      path: '/SxbjCssCase',
+      name: 'SxbjCssCase',
       component: Modeules.SxbjCssCase
-    }
+    },
+    {
+      path:'/CountDownController',
+      name:'CountDownController',
+      component:Modeules.CountDownController
+    },
+    {
+      path:'/VisCodeEnterController',
+      name:'VisCodeEnterController',
+      component:Modeules.VisCodeEnterController
+    },
   ]
 })

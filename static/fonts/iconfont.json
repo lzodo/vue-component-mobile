@@ -20,6 +20,13 @@
       "unicode_decimal": 58904
     },
     {
+      "icon_id": "886993",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
       "icon_id": "1211848",
       "name": "我的",
       "font_class": "wode",

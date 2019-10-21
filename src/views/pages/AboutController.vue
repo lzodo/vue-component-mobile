@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "About",
+  name: "AboutController",
   data() {
     return {
       msg: "",
@@ -24,7 +24,7 @@ export default {
           title: "jsItems",
           val: [
             {
-              path: "/casepages/sxbk",
+              path: "/SxbjCssCase",
               title: "蛇形边框"
             },
             {

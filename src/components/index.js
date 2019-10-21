@@ -1,13 +1,15 @@
-import {lzoHeader,lzoFooter} from './Layout/index'
+import {lzoHeader,lzoFooter,ApptoolLinks} from './Layout/index'
 import {LzoButton} from './LzoButton/index'
-import {VisCodeEnter} from './VisCodeEnter/index'
 
+import VisCodeEnter from './VisCodeEnter/src/index'
 import Countdown from './Countdown/src/index'
 // import {Countdown} from './Countdown/index'
 
 const iview = {
     lzoHeader,
     lzoFooter,
+    ApptoolLinks,
+    
     LzoButton,
     VisCodeEnter,
     Countdown,
@@ -15,8 +17,6 @@ const iview = {
 console.log(iview)
 const install = function (Vue) {
   Object.keys(iview).forEach((key) => {
-    // console.log(iview)
-    // console.log(iview[key])
     Vue.component(iview[key].name, iview[key])
   })
   /**

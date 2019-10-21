@@ -26,6 +26,7 @@ export default {
         acIndex:0
     };
   },
+  
   filters: {},
   methods: {
       changeLink(item,index){
@@ -34,7 +35,14 @@ export default {
       },
   },
   watch: {},
-  mounted() {}
+  mounted() {
+    let that = this;
+    that.links.map((item,index)=>{
+       if(item.link == that.$route.path){
+          that.acIndex = index;
+       }
+    })
+  }
 };
 </script>
 <style lang="scss">
