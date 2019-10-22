@@ -52,6 +52,7 @@ export default {
 <style lang="scss">
 .AppToolLinks{
     width:100%;
+    background: #fff;
     li{
         width: 100%;
         display: flex;

@@ -2,6 +2,7 @@
   <div class="UserInfoController lzo-warp">
     <app-tool-links class='itemLinks' :list='data2'></app-tool-links>
     <app-tool-links class='itemLinks' :list='data1'></app-tool-links>
+    <app-tool-links class='itemLinks' :list='data1'></app-tool-links>
     <app-tool-links class='itemLinks' :list='data3'></app-tool-links>
   </div>
 </template>
@@ -66,6 +67,7 @@ export default {
 <style scoped>
 .UserInfoController{
   padding:0 10px;
+  background: #eee;
 }
 .itemLinks{
   margin-bottom: 10px;

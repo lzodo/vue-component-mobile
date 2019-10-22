@@ -11,37 +11,23 @@ export default new Router({
       name: 'Index',
       component: Modeules.MainController,
       children:[
-        {
-          path: '/',
-          name: 'home',
-          component: Modeules.AppController
-        },
-        {
-          path: '/about',
-          name: 'about',
-          component: Modeules.AboutController
-        },
-        {
-          path: '/userinfo',
-          name: 'userinfo',
-          component: Modeules.UserInfoController
-        },
+        { path: '/',name: 'home',component: Modeules.AppController },
+        { path: '/plugin',name: 'plugin',component: Modeules.PlugInController },
+        { path: '/about',name: 'about',component: Modeules.AboutController },
+        { path: '/userinfo',name: 'userinfo',component: Modeules.UserInfoController },
       ],
     },
-    {
-      path: '/SxbjCssCase',
-      name: 'SxbjCssCase',
-      component: Modeules.SxbjCssCase
-    },
-    {
-      path:'/CountDownController',
-      name:'CountDownController',
-      component:Modeules.CountDownController
-    },
-    {
-      path:'/VisCodeEnterController',
-      name:'VisCodeEnterController',
-      component:Modeules.VisCodeEnterController
-    },
+    // home - my component
+    { path:'/CountDownController',name:'CountDownController',component:Modeules.CountDownController },
+    { path:'/VisCodeEnterController',name:'VisCodeEnterController',component:Modeules.VisCodeEnterController },
+    { path:'/DownScrollController',name:'DownScrollController',component:Modeules.DownScrollController },
+    // home - other component
+    { path:'/DateTimeController',name:'DateTimeController',component:Modeules.DateTimeController },
+    
+    // about
+    { path:'/SxbjCssCase',name: 'SxbjCssCase',component: Modeules.SxbjCssCase },
+
+    // plugin
+    { path:'/vue-easyrefresh',name: 'VueEasyrefresh',component: Modeules.VueEasyrefresh },
   ]
 })

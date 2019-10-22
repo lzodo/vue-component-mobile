@@ -41,6 +41,13 @@
       "unicode_decimal": 58891
     },
     {
+      "icon_id": "5243980",
+      "name": "插件参数配置",
+      "font_class": "chajiancanshupeizhi",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
       "icon_id": "9540063",
       "name": "关于",
       "font_class": "guanyu",

@@ -20,6 +20,11 @@ export default {
           font: "首页"
         },
         {
+          ico:'iconchajiancanshupeizhi',
+          link:'/plugin',
+          font:'插件'
+        },
+        {
           ico: "iconguanyu",
           link: "/about",
           font: "关于"

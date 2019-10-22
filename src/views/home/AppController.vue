@@ -21,7 +21,7 @@ export default {
       msg: "",
       items: [
         {
-          title: "模块一",
+          title: "my components",
           val: [
             {
               path: "/CountDownController",
@@ -36,8 +36,8 @@ export default {
               title: "按钮"
             },
             {
-              path: "/CssComponents/form",
-              title: "表单"
+              path: "/DownScrollController",
+              title: "滚动底部加载"
             },
             {
               path: "/CssComponents/icon",
@@ -74,11 +74,11 @@ export default {
           ]
         },
         {
-          title: "模块二",
+          title: "other components",
           val: [
             {
-              path: "/JsComponents/dialog",
-              title: "弹框"
+              path: "/DateTimeController",
+              title: "日期时间"
             },
             {
               path: "/JsComponents/counter",
