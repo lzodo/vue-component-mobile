@@ -20,7 +20,8 @@ export default {
             link:'https://www.baidu.com',
             isDialog:false,                //点击的时候是否安全提示框
             color:'#EE9A00',                  //图标颜色
-            outlink:true                   //是否是外部链接
+            outlink:true,                   //是否是外部链接
+            note:'可以有描述文字哦'
         },
       ],
       data1:[

@@ -21,6 +21,7 @@ export default new Router({
     { path:'/CountDownController',name:'CountDownController',component:Modeules.CountDownController },
     { path:'/VisCodeEnterController',name:'VisCodeEnterController',component:Modeules.VisCodeEnterController },
     { path:'/DownScrollController',name:'DownScrollController',component:Modeules.DownScrollController },
+    { path:'/PanelController',name:'PanelController',component:Modeules.PanelController },
     // home - other component
     { path:'/DateTimeController',name:'DateTimeController',component:Modeules.DateTimeController },
     

@@ -1,9 +1,11 @@
 <template>
     <ul class="AppToolLinks fineSide side-b side-t">
         <li v-for="(item,index) in list" :key='index' @click='changeLink(item,index)' :style="{height:linkHeight+'px'}">
-            <span class="iconfont" :class="[item.ico]" :style='{color:item.color}'></span>
+            <span class="iconfont ico" :class="[item.ico]" :style='{color:item.color}' v-show='item.ico'></span>
+            <span class="noticonfint" v-show='!item.ico'> </span>
             <span class="title fineSide" :class="{'side-b':index<list.length-1}">
                 <div class="font">{{item.title}}</div>
+                <div class="note">{{item.note}}</div>
                 <span class="iconfont rightIco iconyoujiantou"></span>
             </span>
         </li>
@@ -56,7 +58,11 @@ export default {
     li{
         width: 100%;
         display: flex;
-        .iconfont{
+        .noticonfint{
+            display: block;
+            width: 15px;
+        }
+        .ico{
             font-size: 16px;
             width: 50px;
             height: 100%;
@@ -76,8 +82,17 @@ export default {
                 flex:1;
             }
         }
+        .note{
+            display: flex;
+            align-items: center;
+        }
         .rightIco{
-            width: 50px;
+            font-size: 16px;
+            width: 30px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            color:#777
         }
     }
 }

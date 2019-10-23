@@ -40,8 +40,8 @@ export default {
               title: "滚动底部加载"
             },
             {
-              path: "/CssComponents/icon",
-              title: "图标"
+              path: "/PanelController",
+              title: "面板"
             },
             {
               path: "/CssComponents/layout",
