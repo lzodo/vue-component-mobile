@@ -3,7 +3,7 @@
     <lzo-header class="myheader" :AddLeft="false" @leftClick="leftClick">小东西</lzo-header>
 
     <div class="modeule" v-for="(item,index) in items" :key="index">
-      <span class="title">{{item.title}}</span>
+      <app-line :centertxt='item.title'></app-line>
       <ul class="modeule-val">
         <li class="modeule-item" v-for="(vitem,vindex) in item.val" :key="vindex" @click='handleGoto(vitem.path)'>
            {{vitem.title}}

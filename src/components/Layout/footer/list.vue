@@ -51,6 +51,7 @@ export default {
   height: 100%;
   padding: 5px 10px;
   display: flex;
+  background: #fff;
   .item {
     flex: 1;
     display: flex;

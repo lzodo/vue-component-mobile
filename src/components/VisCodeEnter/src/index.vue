@@ -5,6 +5,7 @@
       :style="{width:(itemWidth+spacing)*length-spacing+unit,height:itemWidth+unit}"
     >
       <input
+        type='number'
         ref="visInputRef"
         class="vis-input"
         v-model="enterValues"

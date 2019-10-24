@@ -1,4 +1,4 @@
-import {lzoHeader,lzoFooter,ApptoolLinks} from './Layout/index'
+import {lzoHeader,lzoFooter,ApptoolLinks,AppPanel,AppLine} from './Layout/index'
 import {DownScroll} from './Pull/index'
 import {LzoButton} from './LzoButton/index'
 
@@ -12,6 +12,8 @@ const iview = {
     lzoHeader,
     lzoFooter,
     ApptoolLinks,
+    AppPanel,
+    AppLine,
 
     DownScroll,
     

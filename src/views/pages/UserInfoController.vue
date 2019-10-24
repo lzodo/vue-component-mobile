@@ -1,5 +1,6 @@
 <template>
   <div class="UserInfoController lzo-warp">
+    <app-panel class='itemLinks panel' :datas='paneldatas1'></app-panel>
     <app-tool-links class='itemLinks' :list='data2'></app-tool-links>
     <app-tool-links class='itemLinks' :list='data1'></app-tool-links>
     <app-tool-links class='itemLinks' :list='data1'></app-tool-links>
@@ -13,6 +14,17 @@ export default {
   data() {
     return {
       msg: "",
+      paneldatas1:{
+          lists:[
+              {
+                  'title':'用户名称',
+                  'note':'已登入',
+                  'link':'',
+                  'img':'../../../static/images/cat.jpg',
+                  'radius':1000
+              },
+          ],
+      },
       data2:[
         {
             title:'所有配置模板',
@@ -65,12 +77,12 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang='scss' scoped>
 .UserInfoController{
-  padding:0 10px;
+  padding: 10px;
   background: #eee;
 }
 .itemLinks{
-  margin-bottom: 10px;
+  margin-bottom:5px;
 }
 </style>
